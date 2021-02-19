@@ -1,0 +1,24 @@
+/*
+ *Name: Allegra Thompson
+ *ID: athomp22
+ *Date: March 16, 2019
+ *Assignment: CIS3110 A3
+*/
+
+The program idispatcher.c is a simulated dispatcher that reads in simulated events through i/o redirection. The simulated events include creating a process (designated with 'C'), exiting a process (designated with 'E'), a process requesting a resource from 1 to 5 (designated with 'R N' where N is the resource number), an interrupt from a resource (designated with 'I N' where N is the resource number), and a timer interrupt (designated with 'T'). Test input files can be found in the test_inputs folder with the corresponded expected output values located in the test_outputs folder.
+
+The program can be compiled using the Makefile with the following command:
+
+make
+
+The program can then be run using a variation of the below command:
+
+./idispatcher<./test_inputs/test0.in
+
+where the "test_inputs/test0.in" can be changed to direct the program to a different input file.
+
+
+References:
+
+Queue functions derived from: https://www.geeksforgeeks.org/queue-set-2-linked-list-implementation/
+I/O redirection derived from: https://www.daniweb.com/programming/software-development/threads/185094/redirecting-input-into-my-c-program-from-a-file-how-to-even-start#
